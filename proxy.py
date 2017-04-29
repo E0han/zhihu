@@ -5,8 +5,6 @@ import requests
 import bs4
 import time
 import pickle
-
-proxy_list=[]
 def get_proxy(n):
 	disp={}
 	user_agent="User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36"
@@ -34,6 +32,5 @@ def get_proxy(n):
 	total.append(port)
 	return total
 
-proxy_list=get_proxy(1)#这个参数是页数，每页有10条数据，n页就是10n个数据，列表可以在主函数中创建
 
 
